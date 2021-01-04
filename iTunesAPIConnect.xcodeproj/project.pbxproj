@@ -16,6 +16,9 @@
 		84B46DD925A336B900A2A285 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B46DD725A336B900A2A285 /* LaunchScreen.storyboard */; };
 		84B46DE425A336BA00A2A285 /* iTunesAPIConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B46DE325A336BA00A2A285 /* iTunesAPIConnectTests.swift */; };
 		84B46DEF25A336BA00A2A285 /* iTunesAPIConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B46DEE25A336BA00A2A285 /* iTunesAPIConnectUITests.swift */; };
+		84F1567425A34BB700D280A9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1567225A34BB700D280A9 /* TableViewCell.swift */; };
+		84F1567525A34BB700D280A9 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F1567325A34BB700D280A9 /* TableViewCell.xib */; };
+		84F1568225A3557A00D280A9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1568125A3557A00D280A9 /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		84B46DEA25A336BA00A2A285 /* iTunesAPIConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesAPIConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B46DEE25A336BA00A2A285 /* iTunesAPIConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesAPIConnectUITests.swift; sourceTree = "<group>"; };
 		84B46DF025A336BA00A2A285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F1567225A34BB700D280A9 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		84F1567325A34BB700D280A9 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		84F1568125A3557A00D280A9 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +109,9 @@
 			children = (
 				84B46DC925A336B600A2A285 /* AppDelegate.swift */,
 				84B46DCB25A336B600A2A285 /* SceneDelegate.swift */,
-				84B46DCD25A336B600A2A285 /* ViewController.swift */,
-				84B46DCF25A336B600A2A285 /* Main.storyboard */,
+				84F1566F25A34B7800D280A9 /* model */,
+				84F1567025A34B7F00D280A9 /* view */,
+				84F1567125A34B8500D280A9 /* controller */,
 				84B46DD525A336B900A2A285 /* Assets.xcassets */,
 				84B46DD725A336B900A2A285 /* LaunchScreen.storyboard */,
 				84B46DDA25A336B900A2A285 /* Info.plist */,
@@ -129,6 +136,32 @@
 				84B46DF025A336BA00A2A285 /* Info.plist */,
 			);
 			path = iTunesAPIConnectUITests;
+			sourceTree = "<group>";
+		};
+		84F1566F25A34B7800D280A9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				84F1568125A3557A00D280A9 /* Result.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		84F1567025A34B7F00D280A9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				84B46DCF25A336B600A2A285 /* Main.storyboard */,
+				84F1567225A34BB700D280A9 /* TableViewCell.swift */,
+				84F1567325A34BB700D280A9 /* TableViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		84F1567125A34B8500D280A9 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				84B46DCD25A336B600A2A285 /* ViewController.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B46DD925A336B900A2A285 /* LaunchScreen.storyboard in Resources */,
+				84F1567525A34BB700D280A9 /* TableViewCell.xib in Resources */,
 				84B46DD625A336B900A2A285 /* Assets.xcassets in Resources */,
 				84B46DD125A336B600A2A285 /* Main.storyboard in Resources */,
 			);
@@ -261,6 +295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F1568225A3557A00D280A9 /* Result.swift in Sources */,
+				84F1567425A34BB700D280A9 /* TableViewCell.swift in Sources */,
 				84B46DCE25A336B600A2A285 /* ViewController.swift in Sources */,
 				84B46DD425A336B600A2A285 /* iTunesAPIConnect.xcdatamodeld in Sources */,
 				84B46DCA25A336B600A2A285 /* AppDelegate.swift in Sources */,
